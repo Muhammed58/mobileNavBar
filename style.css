@@ -1,0 +1,81 @@
+body {
+    width: 100%;
+    height: 1000px;
+    margin: 0;
+    background-color: bisque;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    right: 0;
+    align-items: center;
+    width: 10%;
+    flex-direction: column;
+    text-align: right;
+    margin: 70px 20px auto auto;
+    line-height: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    padding: 1vw;
+    border-radius: 5%;
+    background-color:honeydew;
+}
+
+.navbar a {
+    display: flex;
+    color:chocolate;
+    text-decoration: none;
+    text-shadow:chocolate 1vw 0.8vw 4vw ;
+}
+
+/*Change view for mobile screen max 600px */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        width: 96%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding-left: 5vw;
+        border-radius: 0;
+        margin: 0 1% 1% 1%;
+        box-shadow:darkgrey 0 0 5vw 0.1vw;
+    }
+
+    .navbar a {
+        font-size: 4vw;
+        margin: 0 2vw 1vw 2vw;
+    }
+
+    body{
+        background-color: cornflowerblue;
+    }
+    
+}
+
+/*The code in below provide mobile navbar for smaller mobile screen */
+@media only screen and (max-width: 400px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        width: 96%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding-left: 5vw;
+        border-radius: 0;
+        margin: 0 1% 1% 1%;
+        box-shadow:darkgrey 0 0 5vw 0.1vw;
+
+    }
+
+    .navbar a {
+        font-size: 1vw;
+        margin: 0 2vw 1vw 2vw;
+    }
+
+    
+}
